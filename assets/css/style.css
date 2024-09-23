@@ -298,8 +298,24 @@ section {
   overflow: hidden;
 }
 
+.expertise-list {
+  list-style: none;
+  padding: 0;
+}
+
+.expertise-list li {
+  font-size: 18px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.expertise-list li:last-child {
+  border-bottom: none;
+}
+
 .section-bg {
-  background: #f5f8fd;
+  /* background: #f5f8fd; */
+  background: #f9f9f9;
 }
 
 .section-title {
