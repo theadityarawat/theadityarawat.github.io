@@ -570,11 +570,26 @@ section {
 }
 
 .portfolio .portfolio-wrap {
-  transition: 0.3s;
   position: relative;
-  overflow: hidden;
-  z-index: 1;
 }
+
+.portfolio .portfolio-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-description {
+  opacity: 1;
+}
+
 
 .portfolio .portfolio-wrap::before {
   content: "";
@@ -624,11 +639,6 @@ section {
   right: 0;
   bottom: 0;
   opacity: 1;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-links {
-  opacity: 1;
-  bottom: 0;
 }
 
 /*--------------------------------------------------------------
